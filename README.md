@@ -1,7 +1,7 @@
 # Cryptocurrency Tracker with React JS, Material UI, Chart JS and Firebase
 
 ## Demo
-#### Here is a working live demo :  https://shr-crypto-hunter.netlify.app/
+#### Here is a working live demo :  https://mahejacrypto.netlify.app/
 
 ## Built with 
 
@@ -10,6 +10,3 @@
 - [Chart JS](https://reactchartjs.github.io/react-chartjs-2/#/)
 - [Firebase](https://firebase.google.com/)
 
-## Made with ♥ By Shreyas Mulay (https://www.linkedin.com/in/shreyasmulay23/)
-# cypto-checker
-# cypto-checker

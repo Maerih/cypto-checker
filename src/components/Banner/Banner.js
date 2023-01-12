@@ -43,17 +43,17 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Crypto Hunter
+            MAHEJA CRYPTOS
           </Typography>
           <Typography
             variant="subtitle2"
             style={{
-              color: "darkgrey",
+              color: "#2BCBD7",
               textTransform: "capitalize",
-              fontFamily: "Montserrat",
+              fontFamily: 'Brush Script MT',
             }}
           >
-            Get all the Info regarding your favorite Crypto Currency
+            The Future of Money and Generational Wealth ...
           </Typography>
         </div>
         <Carousel />

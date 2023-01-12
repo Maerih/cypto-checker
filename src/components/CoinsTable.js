@@ -75,7 +75,7 @@ export default function CoinsTable() {
       <Container style={{ textAlign: "center" }}>
         <Typography
           variant="h4"
-          style={{ margin: 18, fontFamily: "Montserrat" }}
+          style={{ margin: 18, fontFamily: "Montserrat", color:"#13c636"}}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>
@@ -87,15 +87,15 @@ export default function CoinsTable() {
         />
         <TableContainer component={Paper}>
           {loading ? (
-            <LinearProgress style={{ backgroundColor: "gold" }} />
+            <LinearProgress style={{ backgroundColor: "green" }} />
           ) : (
             <Table aria-label="simple table">
-              <TableHead style={{ backgroundColor: "#EEBC1D" }}>
+              <TableHead style={{ backgroundColor: "#00cb0" }}>
                 <TableRow>
                   {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
                     <TableCell
                       style={{
-                        color: "black",
+                        color: "#00cb00",
                         fontWeight: "700",
                         fontFamily: "Montserrat",
                       }}
@@ -110,7 +110,7 @@ export default function CoinsTable() {
 
               <TableBody>
                 {handleSearch()
-                  .slice((page - 1) * 10, (page - 1) * 10 + 10)
+                  .slice((page - 1) * 100, (page - 1) * 100 + 100)
                   .map((row) => {
                     const profit = row.price_change_percentage_24h > 0;
                     return (
@@ -125,13 +125,14 @@ export default function CoinsTable() {
                           style={{
                             display: "flex",
                             gap: 15,
+                            
                           }}
                         >
                           <img
                             src={row?.image}
                             alt={row.name}
-                            height="50"
-                            style={{ marginBottom: 10 }}
+                            height="70"
+                            style={{ marginBottom: 10 ,borderEndEndRadius: 22}}
                           />
                           <div
                             style={{ display: "flex", flexDirection: "column" }}

@@ -6,10 +6,11 @@ import Fade from "@material-ui/core/Fade";
 import { Button, Tab, Tabs, AppBar, Box } from "@material-ui/core";
 import Login from "./Login";
 import Signup from "./Signup";
-import GoogleButton from "react-google-button";
+
 import { auth } from "../../firebase";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { CryptoState } from "../../CryptoContext";
+import GoogleButton from "react-google-button";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -121,15 +122,15 @@ export default function AuthModal() {
                 <Tab label="Sign Up" />
               </Tabs>
             </AppBar>
-            {value === 0 && <Login handleClose={handleClose} />}
-            {value === 1 && <Signup handleClose={handleClose} />}
+            
+            
 
             <Box className={classes.google}>
-              <span>OR</span>
-              <GoogleButton
-                style={{ width: "100%", outline: "none" }}
-                onClick={signInWithGoogle}
-              />
+              <span></span>
+              <GoogleButton style={{width: "100%", outline: "none"}} onClick={signInWithGoogle}/>
+            </Box>
+
+            <Box className={classes.google}>
             </Box>
           </div>
         </Fade>

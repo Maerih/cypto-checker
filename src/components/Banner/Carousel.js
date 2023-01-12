@@ -50,7 +50,7 @@ const Carousel = () => {
         <img
           src={coin?.image}
           alt={coin.name}
-          height="80"
+          height="50"
           style={{ marginBottom: 10 }}
         />
         <span>
@@ -66,7 +66,7 @@ const Carousel = () => {
             {coin?.price_change_percentage_24h?.toFixed(2)}%
           </span>
         </span>
-        <span style={{ fontSize: 22, fontWeight: 500 }}>
+        <span style={{ fontSize: 20, fontWeight: 500 }}>
           {symbol} {numberWithCommas(coin?.current_price.toFixed(2))}
         </span>
       </Link>
@@ -87,8 +87,8 @@ const Carousel = () => {
       <AliceCarousel
         mouseTracking
         infinite
-        autoPlayInterval={1000}
-        animationDuration={1500}
+        autoPlayInterval={10}
+        animationDuration={500}
         disableDotsControls
         disableButtonsControls
         responsive={responsive}

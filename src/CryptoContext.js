@@ -8,8 +8,8 @@ import { auth, db } from "./firebase";
 const Crypto = createContext();
 
 const CryptoContext = ({ children }) => {
-  const [currency, setCurrency] = useState("INR");
-  const [symbol, setSymbol] = useState("₹");
+  const [currency, setCurrency] = useState("USD");
+  const [symbol, setSymbol] = useState("$");
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState({

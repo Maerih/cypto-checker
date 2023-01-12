@@ -20,7 +20,7 @@ import UserSidebar from "./Authentication/UserSidebar";
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
-    color: "gold",
+    color: "red",
     fontFamily: "Montserrat",
     fontWeight: "bold",
     cursor: "pointer",
@@ -52,7 +52,7 @@ function Header() {
               variant="h6"
               className={classes.title}
             >
-              Crypto Hunter
+              Maheja Cryptos
             </Typography>
             {/* <Button color="inherit">Login</Button> */}
             <Select
@@ -64,8 +64,6 @@ function Header() {
               onChange={(e) => setCurrency(e.target.value)}
             >
               <MenuItem value={"USD"}>USD</MenuItem>
-              <MenuItem value={"INR"}>INR</MenuItem>
-              <MenuItem value={"GBP"}>GBP</MenuItem>
             </Select>
             {user ? <UserSidebar /> : <AuthModal />}
           </Toolbar>
